@@ -65,6 +65,26 @@ class Guide
     end
   end
 
+  def add
+    puts "\nAdd a restaurant\n\n".upcase
+    restaurant = Restaurant.new
+
+    print "Restaurant name: "
+    restaurant.name = gets.chomp.strip
+
+    print "Cuisine type: "
+    restaurant.cuisine = gets.chomp.strip
+
+    print "Average price: "
+    restaurant.price = gets.chomp.strip
+
+    if restaurant.save
+      puts "\nRestaurant Added\n\n"
+    else
+      puts "\nSave Error: Restaurant not added\n\n"
+    end
+  end
+
   def introduction
     puts "\n\n<<< Welcome to the Food Finder >>>\n\n"
     puts "This is an interactive guide to help you find the food you crave.\n\n"
