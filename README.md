@@ -4,5 +4,5 @@ Food Finder is a little Ruby program that allows us to find the food that we're 
 
 ## Usage
 
-* Run `$ ruby init.rb` inside a console
+* `$ ruby init.rb`
 * Follow the instructions
